@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvNamaLengkap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap Orang"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <TextView
+            android:id="@+id/tvDomisili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaLengkap"
+            android:text="Domisili:"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinslight"/>
+
+        <TextView
+            android:id="@+id/tvKotaLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Cirebon"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinslight"
+            android:layout_toEndOf="@+id/tvDomisili"
+            android:layout_below="@+id/tvNamaLengkap"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinslight"
+            android:layout_below="@+id/tvDomisili"/>
+
+        <TextView
+            android:id="@+id/tvHasilGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Laki-laki"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinslight"
+            android:layout_toEndOf="@+id/tvGender"
+            android:layout_below="@+id/tvKotaLahir"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "738781728577",
+    "project_id": "inventory-app-70537",
+    "storage_bucket": "inventory-app-70537.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738781728577:android:f9f510158c9ceeb527dbc0",
+        "android_client_info": {
+          "package_name": "com.danscoding.inventoryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738781728577-6p2jlstu3ehlt59r0vid38j9kcmin8rd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSv69B67ImjAE_J89Es19Osaoe28LgqBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738781728577-6p2jlstu3ehlt59r0vid38j9kcmin8rd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

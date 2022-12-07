@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danscoding.inventoryapp.HomeActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPelanggan"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#363640"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgGroup"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/group"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgGroup"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pelanggan"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItemBarang"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#363640"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgItemBarang"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/itembarang"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgItemBarang"
+                    android:layout_centerHorizontal="true"
+                    android:text="Item Barang"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPenjualan"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#363640"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPenjualan"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/penjualan"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgPenjualan"
+                    android:layout_centerHorizontal="true"
+                    android:text="Penjualan"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogout"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#363640"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logout"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgLogout"
+                    android:layout_centerHorizontal="true"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danscoding.inventoryapp.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Login"
+                android:textSize="34sp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="375dp"
+                android:layout_height="45dp"
+                android:hint="masukkan email anda!"
+                android:padding="10dp"
+                android:fontFamily="@font/poppinslight"
+                android:background="@drawable/custom_edit_text"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="375dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:hint="masukkan password anda!"
+                android:fontFamily="@font/poppinslight"
+                android:background="@drawable/custom_edit_text"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppinsregular"
+                android:backgroundTint="#3C9626"/>
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Daftar"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppinsregular"
+                android:backgroundTint="#3C9626"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

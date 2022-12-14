@@ -44,7 +44,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Gender"
-            android:inputType="number"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>

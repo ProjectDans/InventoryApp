@@ -18,7 +18,7 @@ class PelangganAdapter(private val context: Context,
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         holder.namaPelanggan.text = "Nama   : " + (daftarPelanggan?.get(position)?.nama)
         holder.domisiliPelanggan.text = "Domisili     : " + daftarPelanggan?.get(position)?.domisili
-        holder.genderPelanggan.text = "Gender   : " + daftarPelanggan?.get(position)?.gender
+        holder.genderPelanggan.text = " " + daftarPelanggan?.get(position)?.gender
         holder.view.setOnClickListener { listener.onDataClick(daftarPelanggan?.get(position), position) }
     }
 

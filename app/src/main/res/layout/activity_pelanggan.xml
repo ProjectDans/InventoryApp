@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.danscoding.inventoryapp.DaftarPelangganActivity">
+    tools:context=".PelangganActivity">
 
     <LinearLayout
         android:id="@+id/topbar"

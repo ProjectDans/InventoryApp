@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.danscoding.inventoryapp.LoginActivity">
+    tools:context=".RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppinsbold"
-                android:text="Login"
+                android:text="Register"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -35,16 +35,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:text="Email"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/emailEditText"
-                android:layout_width="350dp"
+                android:id="@+id/namaEditText"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
+                android:layout_margin="16dp"
                 android:background="@drawable/custom_edit_text"
                 android:fontFamily="@font/poppinslight"
                 android:hint="masukkan email anda!"
@@ -56,17 +57,38 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Konfirmasi Email"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:hint="masukkan konfirmasi email anda!"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:padding="10dp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:text="Password"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/passwordEditText"
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginTop="16dp"
                 android:layout_gravity="center"
+                android:layout_margin="16dp"
                 android:background="@drawable/custom_edit_text"
                 android:fontFamily="@font/poppinslight"
                 android:hint="masukkan password anda!"
@@ -76,28 +98,30 @@
                 tools:ignore="SmallSp" />
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#3C9626"
                 android:fontFamily="@font/poppinsregular"
-                android:text="Login"
+                android:text="Register"
                 android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/btnDaftar"
+                android:id="@+id/btnKembali"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="#3C9626"
+                android:backgroundTint="#BC372D"
                 android:fontFamily="@font/poppinsregular"
-                android:text="Daftar"
+                android:text="Kembali"
                 android:textAllCaps="false" />
 
+
         </LinearLayout>
+
 
     </RelativeLayout>
 

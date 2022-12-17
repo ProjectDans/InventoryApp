@@ -5,33 +5,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.danscoding.inventoryapp.databinding.ActivityLoginBinding
+import com.danscoding.inventoryapp.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityLoginBinding
+    lateinit var binding: ActivityRegisterBinding
     lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
 
-        binding.btnLogin.setOnClickListener {
-            val intent = Intent(this@LoginActivity, HomeActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-        binding.btnDaftar.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+        binding.btnKembali.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
 
-        binding.btnLogin.setOnClickListener {
+        binding.btnRegister.setOnClickListener {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
@@ -52,20 +47,28 @@ class LoginActivity : AppCompatActivity() {
                 binding.passwordEditText.requestFocus()
                 return@setOnClickListener
             }
-            LoginFirebase(email, password)
+            //VALIDASI PANJANG PASSWORD
+            if (password.length < 6){
+                binding.passwordEditText.error = "Minimal Password 6 Karakter!"
+                binding.passwordEditText.requestFocus()
+                return@setOnClickListener
+            }
+            RegisterFirebase(email, password)
         }
     }
 
-    private fun LoginFirebase(email: String, password: String) {
-        auth.signInWithEmailAndPassword(email, password)
+    private fun RegisterFirebase(email: String, password: String) {
+
+        auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) {
                 if (it.isSuccessful){
-                    Toast.makeText(this, "Selamat Datang $email", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, HomeActivity::class.java)
+                    Toast.makeText(this, "Register Sudah Berhasil", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
+
     }
 }

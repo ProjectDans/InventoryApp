@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'org.jetbrains.kotlin.android'
+
 
 android {
     namespace 'com.danscoding.inventoryapp'
@@ -45,5 +48,14 @@ dependencies {
     //implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     implementation "androidx.core:core-ktx:1.9.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20"
+
+    implementation 'androidx.room:room-runtime:2.4.3'
+    implementation 'androidx.room:room-ktx:2.4.3'
+    kapt "androidx.room:room-compiler:2.4.3"
+    kapt "android.arch.persistence.room:compiler:1.1.1"
+
+    def lifecycle_extension_version = '2.2.0-beta01'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_extension_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
 }
 

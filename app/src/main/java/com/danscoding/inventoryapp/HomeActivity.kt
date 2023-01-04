@@ -23,6 +23,10 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, PelangganActivity::class.java)
             startActivity(intent)
         }
+        binding.cardItemBarang.setOnClickListener{
+            val intent = Intent(this, ItemActivity::class.java)
+            startActivity(intent)
+        }
         binding.cardLogout.setOnClickListener {
             auth.signOut()
             val intent = Intent(this@HomeActivity, LoginActivity::class.java)

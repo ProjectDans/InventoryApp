@@ -8,6 +8,6 @@ data class Item(
     var itemName : String = "",
     var itemCategory : String = "",
     var itemPrice : String = ""
-){
+): java.io.Serializable{
     @PrimaryKey(autoGenerate = true) var id : Int = 0
 }

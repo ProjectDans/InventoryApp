@@ -94,7 +94,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/btnTambahItem"
+                android:id="@+id/btnAddOrUpdateItem"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_gravity="center"

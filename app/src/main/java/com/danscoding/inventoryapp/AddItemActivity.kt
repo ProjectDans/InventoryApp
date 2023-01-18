@@ -21,7 +21,7 @@ class AddItemActivity : AppCompatActivity() {
 
         if (item == null) binding.btnAddOrUpdateItem.text = "Tambah Item"
         else {
-            binding.btnAddOrUpdateItem.text = "Edit"
+            binding.btnAddOrUpdateItem.text = "Update"
             binding.nameEditText.setText(item?.itemName.toString())
             binding.hargaEditText.setText(item?.itemPrice.toString())
             binding.categoryEditText.setText(item?.itemCategory.toString())

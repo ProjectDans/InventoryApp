@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItemPenjualan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvNamaPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaPelanggan"
+            android:layout_marginTop="7dp"
+            android:text="Tanggal: "
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:id="@+id/tvIsiTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaPelanggan"
+            android:layout_toEndOf="@+id/tvTanggal"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:text="10/11/2023"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

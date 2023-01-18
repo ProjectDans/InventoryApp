@@ -15,6 +15,20 @@
         android:theme="@style/Theme.InventoryApp"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityAddPenjualan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity_penjualan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AddItemActivity"
             android:exported="false">
             <meta-data

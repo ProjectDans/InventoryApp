@@ -7,6 +7,7 @@
     tools:context=".ActivityAddPenjualan">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -20,53 +21,114 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="7dp"
+            android:fontFamily="@font/poppinssemibold"
             android:text="Nama Pelanggan"
-            android:textSize="14sp"
-            android:fontFamily="@font/poppinssemibold"/>
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/editTextNamaPelanggan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@id/tvNamaPelanggan"
-            android:padding="7dp"
             android:background="@drawable/custom_edit_text"
+            android:fontFamily="@font/poppinsregular"
             android:hint="Masukkan Nama Pelanggan"
-            android:textSize="12sp"
-            android:fontFamily="@font/poppinsregular"/>
+            android:inputType="textPersonName"
+            android:padding="7dp"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvTanggal"
-            android:layout_below="@+id/editTextNamaPelanggan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNamaPelanggan"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="7dp"
+            android:fontFamily="@font/poppinssemibold"
             android:text="Tanggal"
-            android:textSize="14sp"
-            android:fontFamily="@font/poppinssemibold"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvIsiTanggal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvTanggal"
+            android:fontFamily="@font/poppinsregular"
             android:text="dd/mm/yyyy"
-            android:textSize="14sp"
-            android:fontFamily="@font/poppinsregular"/>
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/btnDate"
-            android:layout_below="@+id/tvTanggal"
-            android:layout_toEndOf="@+id/tvIsiTanggal"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_below="@+id/tvTanggal"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/ic_calendar"/>
-
-
-
+            android:layout_toEndOf="@+id/tvIsiTanggal"
+            android:background="@drawable/ic_calendar" />
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/tvItemBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Nama Item Barang"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextItemBarang"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edit_text"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Masukkan Nama Item Barang"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvJumlahItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Jumlah Item"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextJumlahItem"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edit_text"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="number"
+            android:hint="Masukkan Jumlah Item"
+            android:padding="7dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnTambahItem"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3C9626"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Tambah"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

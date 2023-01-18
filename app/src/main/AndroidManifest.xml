@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +20,20 @@
         android:theme="@style/Theme.InventoryApp"
         tools:targetApi="31">
         <activity
+            android:name=".CodeScannerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DetailPenjualanActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ActivityAddPenjualan"
             android:exported="false">
             <meta-data
@@ -22,7 +41,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity_penjualan"
+            android:name=".ActivityPenjualan"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,13 +63,6 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".PelangganActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -85,13 +97,6 @@
         </activity>
         <activity
             android:name=".SplashActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

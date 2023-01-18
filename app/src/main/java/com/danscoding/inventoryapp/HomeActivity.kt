@@ -28,7 +28,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.cardPenjualan.setOnClickListener {
-            val intent = Intent(this, ActivityAddPenjualan::class.java)
+            val intent = Intent(this, ActivityPenjualan::class.java)
+            startActivity(intent)
+        }
+        binding.btnScan.setOnClickListener {
+            val intent = Intent(this,CodeScannerActivity::class.java)
             startActivity(intent)
         }
         binding.cardLogout.setOnClickListener {

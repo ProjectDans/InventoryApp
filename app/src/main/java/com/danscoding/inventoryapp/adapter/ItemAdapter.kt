@@ -1,6 +1,5 @@
 package com.danscoding.inventoryapp.adapter
 
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

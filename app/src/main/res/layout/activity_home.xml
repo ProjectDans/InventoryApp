@@ -7,10 +7,11 @@
     tools:context="com.danscoding.inventoryapp.HomeActivity">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
         android:rowCount="2"
+        android:layout_centerHorizontal="true"
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
@@ -133,5 +134,28 @@
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_below="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#363640"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/bottomAppBar"
+            android:src="@drawable/ic_qr_code"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </RelativeLayout>

@@ -4,9 +4,8 @@
     android:id="@+id/cvMain"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="10dp">
+    android:layout_margin="5dp"
+    app:cardCornerRadius="7dp">
 
     <RelativeLayout
         android:layout_width="match_parent"

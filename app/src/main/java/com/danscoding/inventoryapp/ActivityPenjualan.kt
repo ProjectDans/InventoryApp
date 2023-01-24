@@ -42,6 +42,9 @@ class ActivityPenjualan : AppCompatActivity() {
         penjualanList.add(Penjualan("Siti", "18-01-2023"))
         penjualanList.add(Penjualan("Teh Neneng", "18-01-2023"))
         penjualanList.add(Penjualan("Yadi Pengkolan", "18-01-2023"))
+        penjualanList.add(Penjualan("Haryanto", "12-04-2023"))
+        penjualanList.add(Penjualan("Budi Hajati", "15-04-2023"))
+        penjualanList.add(Penjualan("Rohman", "19-05-2023"))
 
         penjualanAdapter = PenjualanAdapter(penjualanList)
         recyclerView.adapter = penjualanAdapter

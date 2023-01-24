@@ -63,7 +63,7 @@ class ItemActivity : AppCompatActivity() {
                             p0.dismiss()
                         }
 
-                        builder.setNegativeButton("NO") { p0, p1 ->
+                        builder.setNegativeButton("Tidak") { p0, p1 ->
                             p0.dismiss()
                         }
 
